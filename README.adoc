@@ -1,48 +1,34 @@
-= Web- / Mobile-Technologien: Projekt
-Boris Dudelsack <boris.dudelsack@hs-flensburg.de>
-1.0, 2022-12-08
+
 
 == Beschreibung
 
-Es soll eine Anwendung entwickelt werden, die die Verwaltung von ausgeliehenen Büchern übernimmt. Die Anwendung soll mithilfe der Server-Client-Architektur gebaut werden und Clients für mehrere Platformen zur Verfügung stellen. Das Oberziel bei der Entwicklung ist - so viel gemeinsamen Code für mehrere Platformen zu haben wie möglich.
+Eine Server Client Anwendung zum Verleihen und Leihen von Büchern
 
 == Anforderungen
 
 === Backend
 
 - Bietet REST-Api mit JSON als Datenübertragungsformat zur Verwaltung von Büchern und deren Ausleihung
-- Technologie: Ktor Server, Exposed, Kodein (optional)
-- (optional) Multi-Tenancy - erlaubt mehreren Benutzern die Verwaltung ihrer Bücher
-- (optional) Authentifizierung mit JWT-Token
-- (optional) Admin-API für die Verwaltung der Benutzer
+- Technologie: Ktor Server, Exposed, Kodein
+- Multi-Tenancy - erlaubt mehreren Benutzern die Verwaltung ihrer Bücher
+- Authentifizierung mit JWT-Token
+- Admin-API für die Verwaltung der Benutzer
 
 === Client - Desktop
 
 - Benutzt die REST-Api Schnittstelle des Backends und erlaubt die Verwaltung von Büchern
 - Technologie: Compose for Desktop, Ktor-Client
-- (optional) Authentifizierung mit JWT-Token
+- Authentifizierung mit JWT-Token
 
 === Client - Android
 
 - Benutzt die REST-Api Schnittstelle des Backends und erlaubt die Verwaltung von Büchern
 - Technologie: Jetpack Compose, Ktor-Client
-- (optional) Authentifizierung mit JWT-Token
+- Authentifizierung mit JWT-Token
 
 === Client - Web
 
 - Benutzt die REST-Api Schnittstelle des Backends und erlaubt die Verwaltung von Büchern
 - Technologie: Compose for Web, Ktor-Client
-- (optional) Admin-Interface zur Verwaltung der Benutzer
+- Admin-Interface zur Verwaltung der Benutzer
 
-== Abgabe
-
-- Abgabe bis spätestens *26.01.2023*
-- Projekt wird in den gleichen Zweiergruppen wie auch die Laboraufgaben bearbeitet
-- Abgabe des Source-Codes erfolgt ausschliesslich per Github Classrooms
-- Zur Abgabe gehört ein Video (Screencast) in dem ihr eure Applikation und die einzelnen Komponenten vorstellt und erläuter, welche Entscheidungen ihr bei der Entwicklung getroffen habt und wie viel ihr als gemeinsamen Code benutzen konntet (Dauer 10-20 Minuten)
-- Video bitte *NICHT* ins Git einchecken. Abgabe per *E-Mail* mit dem Link zum Dateihoster (z.B. WeTransfer)
-
-=== Bei Fragen
-
-- E-Mail: boris.dudelsack@hs-flensburg.de
-- Discord
