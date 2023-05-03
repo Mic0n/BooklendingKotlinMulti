@@ -3,6 +3,7 @@
 == Beschreibung
 
 Eine Server Client Anwendung zum Verleihen und Leihen von Büchern
+Eine Gruppenarbeit mit maximilian-steinberg
 
 == Anforderungen
 
